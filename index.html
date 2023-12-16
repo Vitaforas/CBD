@@ -87,56 +87,13 @@ Klick Hier 👇🏻
                                                                 <h2 class="major">MY free CBD</h2>
                                                                 <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 
-        <p>         
+
+
+        <p>      
+<video src="https://tv.vitaforas.de/readyplayerone.mp4" width="100%" height="auto" controls poster="bildname3.jpg" type ="video/mp4">Ihr Browser kann dieses Video leider nicht wiedergeben.</video>
+   
 </p>         
 
-
-<figure id="video_player">
-     <video width="100%" height="auto" autoplay loop>
-     <source src="video1.mp4" type="video/mp4" />
-     <source src="video1.webm" type="video/webm" />
-         <source src="video1.ogg" type="video/ogg" />
-             Your browser does not support the video tag.
-     </video>
-     <figcaption>
-     <ul>
-     <li><a href="video1.mp4">
-<img src="bildname1.jpg" alt="1" width="50" height="60"></a>
-     <a href="video2.mp4">
-<img src="bildname2.jpg" alt="2" width="50" height="60"></a>
-     <a href="video3.mp4">
-<img src="bildname3.jpg" alt="3" width="50" height="60"></a>
-     
-
-
-
-
-
-
-     </figcaption>
-     </figure>
-
-<script type="text/javascript">
-var video_player=document.getElementsById("video_player"),
-links=video_player.getElementsByTagName('a');
-for(var i=0; i<links.length; i++){
-links[i].onclick=handler;
-}
-
-function handler(e){
-e.preventDefault();
-videotarget=this.getAttribute("href");
-filename=videotarget.substr(0,videotarget.lastIndexOf('.'))||videotarget;
-video=document.querySelectorAll("#video_player video");
-video.removeAttribute('poster');
-source=document.querySelectAll("#video_player video source");
-source[0].src=filename + ".mp4";
-source[1].src=filename + ".webm";
-source[2].src=filename + ".ogg";
-video.load();
-video.play();
-}
-</script>
 
 
 
